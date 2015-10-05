@@ -17,5 +17,5 @@ urls = (
 
 
 if __name__ == '__main__':
-    app = we.application(url, globals())
+    app = web.application(url, globals())
     app.run()

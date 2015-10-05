@@ -1,48 +1,49 @@
 
-class FlowsBlockIP(object):
-    """docstring for FlowsBlockIP"""
-    def POST(self):
-    def DELETE(self):
+import json
+import web
+import re
 
+class FlowsBlockIP:
+    def POST():
+        msg = web.data()
+        ip = json.loads(msg)
+
+    def DELETE():
+        msg = web.data()
+        ip = json.loads(msg)
+"""
 class FlowsBlockMAC:
-    def POST(self):
-    """docstring for FlowsBlockMAC"""
-    def DELETE(self):
+    def POST():
+
+    def DELETE():
 
 class FlowsBlockPort:
-    """docstring for FlowsBlockPort"""
-    def POST(self):
-    def DELETE(self):
+    def POST():
+    def DELETE():
 
 class FlowsBlockTimes:
-    """docstring for FlowsBlockTimes"""
-    def POST(self):
-    def DELETE(self):
+    def POST():
+    def DELETE():
 
 class FlowsNonblockTimes:
-    """docstring for FlowsNonblockTimes"""
-    def POST(self):
-    def DELETE(self):
+    def POST():
+    def DELETE():
 
 class FlowsBlockProtocol:
-    """docstring for FlowsBlockProtocol"""
-    def POST(self):
-    def DELETE(self):
+    def POST():
+    def DELETE():
 
 class FlowsBlockProtocolPort:
-    """docstring for FlowsBlockProtocolPort"""
-    def POST(self):
-    def DELETE(self):
+    def POST():
+    def DELETE():
 
 class FlowsBlockList:
-    """docstring for FlowsBlockList"""
-    def GET(self):
+    def GET():
 
 class FlowsNonblockList:
-    """docstring for FlowsNonblockList"""
-    def GET(self):
+    def GET():
 
 class FlowsBlockAll
-    """docstring for FlowsBlockAll"""
-    def POST(self):
-    def DELETE(self):
+    def POST():
+    def DELETE():
+"""
