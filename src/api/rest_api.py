@@ -1,6 +1,6 @@
 
 import web
-import flows_handle_classes.py
+import flows_handler_classes
 
 urls = (
     'flows/block/ip' , 'FlowsBlockIP'
@@ -15,7 +15,6 @@ urls = (
     'flows/block/all', 'FlowsBlockAll'
 )
 
-
-if __name__ == '__main__':
-    app = web.application(url, globals())
-    app.run()
+def setting_server():
+    app = web.application(urls, globals())
+    return app
