@@ -1,5 +1,8 @@
 
+from pyke import knowlegde_engine
+
 def test_rules():
+    engine = knowlegde_engine.engine()
+    engine.activate()
     while True:
-        pass
-        #TODO implementar o testador de regras
+        engine.prove_1_goal()
