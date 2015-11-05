@@ -11,13 +11,13 @@ def main():
     thread.start_new_thread(pyke.test_rules, ())
     print 'Starting server...'
     app = rest.setting_server()
-    thread.start_new_thread(start_server, (app, ))
+    thread.start_new_thread(start_server, (app,))
     print 'Server running. Listening for request on port 8080.'
     while True:
         pass
 
 def start_server(app):
-    app.run()
+    app.run(port=8000)
 
 
 if __name__ == '__main__':

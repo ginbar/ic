@@ -25,8 +25,14 @@ urls = (
 )
 
 
+class PortApplication(web.application):
+    def run(self, port=8080, *middleware):
+        func = self.wsgifunc(*middleware)
+        return web.httpserver.runsimple(func, ('0.0.0.0', port))
+
+
 def setting_server():
-    app = web.application(urls, globals())
+    app = PortApplication(urls, globals())
     return app
 
 

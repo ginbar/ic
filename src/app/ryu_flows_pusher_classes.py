@@ -7,7 +7,7 @@ def uri_format():
 
 def insert_block_by_ip(ip):
     print 'insert_block_by_ip foi invocado com ip: ' + ip
-    uri = '/stats/flowentry/add'
+    uri = 'stats/flowentry/add'
     flow_format = {
     "dpid": 1,
     "cookie": 1,
@@ -32,7 +32,7 @@ def insert_block_by_ip(ip):
 
 def remove_block_by_ip(ip):
     print 'remove_block_by_ip foi invocado com mac: ' + ip
-    uri = '/stats/flowentry/delete_strict'
+    uri = 'stats/flowentry/delete_strict'
     flow_format = {
     "dpid": 1,
     "cookie": 1,
@@ -57,7 +57,7 @@ def remove_block_by_ip(ip):
 
 def insert_block_by_mac(mac):
     print 'insert_block_by_mac foi invocado com mac: ' + mac
-    uri = '/stats/flowentry/add'
+    uri = 'stats/flowentry/add'
     flow_format = {
     "dpid": 1,
     "cookie": 1,
@@ -82,7 +82,7 @@ def insert_block_by_mac(mac):
 
 def remove_block_by_mac(mac):
     print 'insert_block_by_mac foi invocado com mac: ' + mac
-    uri = '/stats/flowentry/delete_strict'
+    uri = 'stats/flowentry/delete_strict'
     flow_format = {
     "dpid": 1,
     "cookie": 1,
