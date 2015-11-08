@@ -49,12 +49,22 @@
 		<tr>
 			<td>/add_blockbetweentimes</td>
 			<td>POST</td>
-			<td>{"begin": "&#60begin_time>", "end": "&#60end_time>"}</td>
+			<td>{"ip" : "&#60target_ip>", "begin": "&#60begin_time>", "end": "&#60end_time>"}</td>
 		</tr>
 		<tr>
 			<td>/delete_blockbetweentimes</td>
 			<td>POST</td>
-			<td>{"begin": "&#60begin_time>", "end": "&#60end_time>"}</td>
+			<td>{"ip" : "&#60target_ip>", "begin": "&#60begin_time>", "end": "&#60end_time>"}</td>
+		</tr>
+		<tr>
+			<td>/add_nonblockbetweentimes</td>
+			<td>POST</td>
+			<td>{"ip" : "&#60target_ip>", "begin": "&#60begin_time>", "end": "&#60end_time>"}</td>
+		</tr>
+		<tr>
+			<td>/delete_nonblockbetweentimes</td>
+			<td>POST</td>
+			<td>{"ip" : "&#60target_ip>", "begin": "&#60begin_time>", "end": "&#60end_time>"}</td>
 		</tr>
 		<tr>
 			<td>/add_by_protocol</td>

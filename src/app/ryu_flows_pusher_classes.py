@@ -9,7 +9,7 @@ def insert_block_by_ip(ip):
     print 'insert_block_by_ip foi invocado com ip: ' + ip
     uri = 'stats/flowentry/add'
     flow_format = {
-    "dpid": 1,
+    "dpid": 264705663479227,
     "cookie": 1,
     "cookie_mask": 1,
     "table_id": 0,

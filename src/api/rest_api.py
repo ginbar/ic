@@ -63,10 +63,18 @@ class DeleteBlockMAC:
         mac = msg.mac
         ryu_con.remove_block_by_mac(mac)
 
-"""
-class FlowsBlockPort:
-    def POST():
-    def DELETE():
+
+class AddBlockPort:
+    def POST(self):
+        msg = web.input()
+        port = msg.port
+        ryu_con.remove_block_by_mac(mac)
+
+class DeleteBlockPort:
+    def POST(self):
+        msg = web.input()
+        port = msg.port
+        ryu_con.remove_block_by_mac(mac)
 
 class FlowsBlockTimes:
     def POST():
@@ -93,4 +101,3 @@ class FlowsNonblockList:
 class FlowsBlockAll
     def POST():
     def DELETE():
-"""
