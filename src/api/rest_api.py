@@ -68,22 +68,44 @@ class AddBlockPort:
     def POST(self):
         msg = web.input()
         port = msg.port
-        ryu_con.remove_block_by_mac(mac)
+        ryu_con.insert_block_by_mac(port)
+
 
 class DeleteBlockPort:
     def POST(self):
         msg = web.input()
         port = msg.port
-        ryu_con.remove_block_by_mac(mac)
+        ryu_con.remove_block_by_mac(port)
+
 
 class FlowsBlockTimes:
-    def POST():
-    def DELETE():
+    def POST(self):
+        msg = web.input()
+        ip, t1, t2 = msg.ip, msg.t1, msg.t2
+        pyke.add_block_between_time(ip, t1, t2)
+
+
+class DeleteBlockTimes:
+    def POST(self):
+        msg = web.input()
+        ip, t1, t2 = msg.ip, msg.t1, msg.t2
+        pyke.remove_block_between_time(ip, t1, t2)
+
 
 class FlowsNonblockTimes:
-    def POST():
-    def DELETE():
+    def POST(self):
+        msg = web.input()
+        ip, t1, t2 = msg.ip, msg.t1, msg.t2
+        pyke.nonblock_between_time(ip, t1, t2)
 
+
+class DeleteNonblockTimes:
+    def POST(self):
+        msg = web.input()
+        ip, t1, t2 = msg.ip, msg.t1, msg.t2
+        pyke.nonblock_between_time(ip, t1, t2)
+
+"""
 class FlowsBlockProtocol:
     def POST():
     def DELETE():
@@ -101,3 +123,4 @@ class FlowsNonblockList:
 class FlowsBlockAll
     def POST():
     def DELETE():
+"""
