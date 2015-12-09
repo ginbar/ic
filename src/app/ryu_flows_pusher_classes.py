@@ -2,10 +2,13 @@
 import ryu.app.ofctl_rest as ryu_con
 import requests
 
+
 dp_id = 264705663479227
+
 
 def uri_format():
     return 'http://localhost:8080/uri'
+
 
 def insert_block_by_ip(ip):
     uri = 'stats/flowentry/add'
